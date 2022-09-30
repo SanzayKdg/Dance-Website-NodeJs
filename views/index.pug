@@ -1,0 +1,56 @@
+//- index.pug
+doctype html
+html
+  head
+    title ABCD Academy 
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+       ul
+            div#logo
+              img(src="../static/img/abcd-logo.jpg", alt="ABCD-Logo") 
+              | ABCD #[br]Academy 
+            li.list-item #[a(href="/")  Home]
+            li.list-item #[a(href="/")  About]
+            li.list-item #[a(href="/")  Our Services  ]
+            li.list-item #[a(href="/")  Contact Us]
+    
+    section#intro 
+        div Welcome to ABCD Academy
+        div Learn Dance With Professional Dancers
+   
+    section#mission
+        h2 Our Mission
+        div.card
+          h3 Dance Perfection
+          div.card-box
+              div.card-img
+                img(src="/static/1.png", alt="")
+              div.card-content
+                p This is the best dance academy.
+        div.card
+          h3 Dance in any style
+          div.card-box
+              div.card-img
+                img(src="/static/3.png", alt="")
+              div.card-content
+                p This is the best dance academy.
+        div.card
+          h3 Professional Teaching
+          div.card-box
+              div.card-img
+                img(src="/static/2.png", alt="")
+              div.card-content
+                p This is the best dance academy.
+    section#sponsor
+        h2 Our Sponsors
+        div#sponsors
+          img(src="/static/img/logo1.png", alt="sponsor img" class = "spimage")
+          img(src="/static/img/logo2.png", alt="sponsor img" class = "spimage")
+          img(src="/static/img/logo3.png", alt="sponsor img" class = "spimage")
+          img(src="/static/img/logo4.png", alt="sponsor img" class = "spimage")
+    section#footer 
+        | &copy; Copyright 2022 ABCD Academy | All Rights Reserved
+    script
+      include ../static/index.js
